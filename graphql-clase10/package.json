@@ -1,0 +1,21 @@
+{
+  "name": "graphql-clase10",
+  "version": "1.0.0",
+  "description": "API GraphQL con Node.js, Express, Apollo Server y MongoDB (Mongoose) - Clase 10",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "apollo-server-express": "^3.13.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "graphql": "^16.8.1",
+    "mongoose": "^8.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
