@@ -1,0 +1,203 @@
+/* ==========================================================
+   Dulce Tentación — estilos.css
+   Paleta y estilos compartidos por todas las páginas del sitio
+   ========================================================== */
+
+:root {
+  --color-rosa: #FFB5C0;
+  --color-verde: #D3DFC3;
+  --color-crema: #FBE7C6;
+  --color-cafe: #6B4A3F;
+  --color-cafe-suave: #8C6A5D;
+  --color-fondo: #FFFBF6;
+  --color-blanco: #FFFFFF;
+
+  --fuente-titulos: "Fraunces", serif;
+  --fuente-texto: "Poppins", sans-serif;
+}
+
+body {
+  background-color: var(--color-fondo);
+  color: var(--color-cafe);
+  font-family: var(--fuente-texto);
+}
+
+h1, h2, h3, h4, .logo-marca {
+  font-family: var(--fuente-titulos);
+  color: var(--color-cafe);
+}
+
+a {
+  color: var(--color-cafe);
+}
+
+a:hover {
+  color: var(--color-cafe-suave);
+}
+
+/* ---------- Navbar ---------- */
+
+.navbar-dulce {
+  background-color: var(--color-blanco);
+  border-bottom: 1px solid var(--color-crema);
+}
+
+.navbar-dulce .nav-link {
+  color: var(--color-cafe);
+  font-weight: 500;
+}
+
+.navbar-dulce .nav-link:hover,
+.navbar-dulce .nav-link.active {
+  color: var(--color-rosa);
+}
+
+.logo-marca {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.logo-marca .logo-icono {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: var(--color-crema);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+}
+
+.btn-pedir {
+  background-color: var(--color-rosa);
+  border: none;
+  color: var(--color-cafe);
+  font-weight: 600;
+  border-radius: 999px;
+  padding: 0.5rem 1.4rem;
+}
+
+.btn-pedir:hover {
+  background-color: var(--color-cafe);
+  color: var(--color-blanco);
+}
+
+.icono-navbar {
+  color: var(--color-cafe);
+  font-size: 1.2rem;
+  margin-left: 0.75rem;
+}
+
+/* ---------- Hero / carrusel best sellers ---------- */
+
+.hero-carrusel {
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+.hero-carrusel .carousel-item img {
+  height: 380px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.hero-carrusel .carousel-caption {
+  background: rgba(107, 74, 63, 0.55);
+  border-radius: 1rem;
+  bottom: 1.5rem;
+  left: 5%;
+  right: 5%;
+  padding: 0.75rem 1rem;
+}
+
+/* ---------- Sección de productos ---------- */
+
+.seccion-titulo {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.tarjeta-producto {
+  background-color: var(--color-blanco);
+  border: 1px solid var(--color-crema);
+  border-radius: 1rem;
+  overflow: hidden;
+  height: 100%;
+  transition: transform 0.15s ease;
+}
+
+.tarjeta-producto:hover {
+  transform: translateY(-4px);
+}
+
+.tarjeta-producto img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.tarjeta-producto .cuerpo {
+  padding: 0.9rem 1rem;
+}
+
+.tarjeta-producto .nombre {
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 0.25rem;
+}
+
+.tarjeta-producto .precio {
+  color: var(--color-cafe-suave);
+  font-weight: 600;
+}
+
+/* ---------- Categorías (carta.html) ---------- */
+
+.filtro-categoria {
+  background-color: var(--color-blanco);
+  border: 1px solid var(--color-verde);
+  color: var(--color-cafe);
+  border-radius: 999px;
+  padding: 0.4rem 1.1rem;
+  font-weight: 500;
+}
+
+.filtro-categoria.active,
+.filtro-categoria:hover {
+  background-color: var(--color-verde);
+  color: var(--color-cafe);
+}
+
+/* ---------- Footer ---------- */
+
+.footer-dulce {
+  background-color: var(--color-crema);
+  color: var(--color-cafe);
+  margin-top: 4rem;
+  padding: 3rem 0 1.5rem;
+}
+
+.footer-dulce h5 {
+  font-family: var(--fuente-titulos);
+  margin-bottom: 1rem;
+}
+
+.footer-dulce a {
+  color: var(--color-cafe);
+  text-decoration: none;
+}
+
+.footer-dulce a:hover {
+  color: var(--color-rosa);
+}
+
+.footer-dulce .copyright {
+  border-top: 1px solid rgba(107, 74, 63, 0.2);
+  margin-top: 2rem;
+  padding-top: 1rem;
+  font-size: 0.85rem;
+  text-align: center;
+}
