@@ -1,0 +1,166 @@
+:root {
+  --rosa: #FFB5C0;
+  --verde: #D3DFC3;
+  --mantequilla: #FBEBC8;
+  --frambuesa: #8C3B52;
+  --cacao: #4A2F33;
+  --fondo: #FFFAFA;
+  --borde: #EBD3D8;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--fondo);
+  color: var(--cacao);
+  font-family: 'Nunito', sans-serif;
+  line-height: 1.6;
+}
+main { flex: 1; padding-block: 2rem; }
+h1, h2, h3, .logo { font-family: 'Playfair Display', serif; }
+a { color: var(--frambuesa); }
+.texto { max-width: 65ch; }
+
+/* Navbar */
+.navbar-dt { background: var(--rosa); padding-block: .75rem; }
+.navbar-dt .nav-link { color: var(--cacao); font-weight: 700; padding: .25rem .5rem; }
+.navbar-dt .nav-link.active,
+.navbar-dt .nav-link:hover { text-decoration: underline; text-underline-offset: .35rem; }
+.navbar-dt .navbar-toggler { border-color: var(--cacao); }
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 5.5rem;
+  height: 5.5rem;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  background: var(--verde);
+  color: var(--cacao);
+  font-size: .85rem;
+  font-weight: 700;
+  line-height: 1.1;
+  text-align: center;
+  text-decoration: none;
+}
+.icono {
+  position: relative;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--cacao);
+  font-size: 1.35rem;
+}
+.badge-carrito {
+  position: absolute;
+  top: -.55rem;
+  right: -.75rem;
+  min-width: 1.2rem;
+  padding: .1rem .35rem;
+  border-radius: 1rem;
+  background: var(--frambuesa);
+  color: #fff;
+  font-size: .7rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+}
+.badge-carrito:empty { display: none; }
+
+/* Botones */
+.btn-dt { background: var(--frambuesa); border: 0; color: #fff; font-weight: 700; }
+.btn-dt:hover, .btn-dt:focus-visible { background: var(--cacao); color: #fff; }
+.btn-pide { background: #fff; border: 2px solid var(--cacao); color: var(--cacao); font-weight: 700; }
+.btn-pide:hover { background: var(--cacao); color: #fff; }
+
+/* Carrusel */
+.slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: .25rem;
+  min-height: 17rem;
+  padding: 2rem 4rem;
+  border-radius: 1rem;
+  background: var(--mantequilla);
+  text-align: center;
+}
+.carousel-item:nth-child(even) .slide { background: var(--verde); }
+.slide-emoji { font-size: 5rem; line-height: 1; }
+.carousel-control-prev-icon, .carousel-control-next-icon { filter: invert(1); }
+
+/* Tarjetas de producto */
+.tarjeta {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  border: 1px solid var(--borde);
+  border-radius: 1rem;
+  background: #fff;
+}
+.tarjeta-img {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 4 / 3;
+  background: var(--verde);
+  font-size: 4rem;
+}
+.tarjeta-cuerpo { display: flex; flex: 1; flex-direction: column; gap: .35rem; padding: 1rem; }
+.tarjeta h3 { margin: 0; font-size: 1.1rem; }
+.tarjeta .desc { margin: 0; font-size: .85rem; opacity: .8; }
+.tarjeta-pie { display: flex; align-items: center; justify-content: space-between; gap: .5rem; margin-top: auto; padding-top: .5rem; }
+.precio { font-weight: 700; }
+
+/* Filtros */
+.chips { display: flex; flex-wrap: wrap; gap: .5rem; }
+.chip {
+  padding: .35rem 1rem;
+  border: 1px solid var(--cacao);
+  border-radius: 2rem;
+  background: transparent;
+  color: var(--cacao);
+}
+.chip.activo { background: var(--cacao); color: #fff; }
+
+/* Estados */
+.estado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+/* Carrito */
+.linea {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: .75rem;
+  padding: .75rem 1rem;
+  border: 1px solid var(--borde);
+  border-radius: .75rem;
+  background: #fff;
+}
+.linea .emoji { font-size: 2rem; }
+.linea .info { flex: 1; min-width: 0; }
+.cantidad { display: flex; align-items: center; gap: .5rem; }
+.panel { padding: 1.5rem; border: 1px solid var(--borde); border-radius: 1rem; background: #fff; }
+
+/* Footer */
+.footer-dt { margin-top: 2rem; padding-block: 2rem; background: var(--verde); }
+.footer-dt ul { margin: 0; padding: 0; list-style: none; }
+.footer-dt li { padding-block: .15rem; }
+.footer-dt a { color: var(--cacao); }
+
+@media (max-width: 767.98px) {
+  .slide { padding: 2rem 3rem; }
+  .navbar-dt .logo { width: 4rem; height: 4rem; font-size: .65rem; }
+}
