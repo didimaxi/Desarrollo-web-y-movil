@@ -1,0 +1,20 @@
+[
+  {"id":1,"nombre":"Torta tres leches","categoria":"tortas","precio":18900,"emoji":"🎂","destacado":true,"descripcion":"Bizcocho húmedo bañado en tres leches y crema chantilly."},
+  {"id":2,"nombre":"Torta mil hojas manjar","categoria":"tortas","precio":19900,"emoji":"🍰","destacado":true,"descripcion":"Capas crujientes con manjar casero y nueces."},
+  {"id":3,"nombre":"Torta selva negra","categoria":"tortas","precio":21900,"emoji":"🍒","destacado":true,"descripcion":"Chocolate, cerezas y crema suave."},
+  {"id":4,"nombre":"Torta de frutilla","categoria":"tortas","precio":20900,"emoji":"🍓","destacado":true,"descripcion":"Frutillas frescas sobre crema pastelera."},
+  {"id":5,"nombre":"Torta chocolate intenso","categoria":"tortas","precio":22900,"emoji":"🍫","destacado":false,"descripcion":"Tres capas de bizcocho de cacao y ganache."},
+  {"id":6,"nombre":"Torta de lúcuma","categoria":"tortas","precio":19500,"emoji":"🥮","destacado":false,"descripcion":"Crema de lúcuma con bizcocho de vainilla."},
+  {"id":7,"nombre":"Torta limón merengue","categoria":"tortas","precio":18500,"emoji":"🍋","destacado":false,"descripcion":"Base de galleta, crema de limón y merengue."},
+  {"id":8,"nombre":"Torta red velvet","categoria":"tortas","precio":23900,"emoji":"❤️","destacado":false,"descripcion":"Bizcocho rojo con frosting de queso crema."},
+  {"id":9,"nombre":"Brownie con nueces","categoria":"pasteles","precio":2500,"emoji":"🧁","destacado":false,"descripcion":"Porción individual, centro suave."},
+  {"id":10,"nombre":"Cheesecake de frambuesa","categoria":"pasteles","precio":4200,"emoji":"🍰","destacado":false,"descripcion":"Porción con salsa de frambuesa."},
+  {"id":11,"nombre":"Café latte","categoria":"calientes","precio":2800,"emoji":"☕","destacado":false,"descripcion":"Espresso doble con leche texturizada."},
+  {"id":12,"nombre":"Chocolate caliente","categoria":"calientes","precio":3200,"emoji":"🍵","destacado":false,"descripcion":"Cacao real con leche y un toque de canela."},
+  {"id":13,"nombre":"Limonada menta jengibre","categoria":"frias","precio":2900,"emoji":"🍋","destacado":false,"descripcion":"Limonada natural, 400 ml."},
+  {"id":14,"nombre":"Frappé de vainilla","categoria":"frias","precio":3900,"emoji":"🥤","destacado":false,"descripcion":"Helado de vainilla, leche y hielo."},
+  {"id":15,"nombre":"Sándwich pollo palta","categoria":"sandwich","precio":4900,"emoji":"🥪","destacado":false,"descripcion":"Pan de masa madre, pollo desmenuzado y palta."},
+  {"id":16,"nombre":"Croissant jamón queso","categoria":"sandwich","precio":3900,"emoji":"🥐","destacado":false,"descripcion":"Croissant de mantequilla horneado al día."},
+  {"id":17,"nombre":"Galletas chips de chocolate","categoria":"galletas","precio":1800,"emoji":"🍪","destacado":false,"descripcion":"Bolsa de 3 unidades."},
+  {"id":18,"nombre":"Alfajores artesanales","categoria":"galletas","precio":2200,"emoji":"🍪","destacado":false,"descripcion":"Rellenos de manjar y coco rallado, 2 unidades."}
+]
